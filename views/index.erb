@@ -29,7 +29,7 @@
 			width: 20%;
 			height: 50px;
 		}
-		.demo-card-square.mdl-card {
+		.grid-card.mdl-card {
     		width: 320px;
     		float: left;
     		margin :5px;
@@ -67,7 +67,7 @@
 	    				<div>
 	    					<!-- Title Input -->
 		      				<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" style="margin: 5px 10%;width: 80%">
-		        				<input class="mdl-textfield__input" type="text" id="title_input" name="task_title">
+		        				<input class="mdl-textfield__input" type="text" id="title_input" name="task_title" required>
 		        				<label class="mdl-textfield__label" for="title_input">Title</label>
 							</div>	
 	    				</div>
@@ -133,7 +133,7 @@
     		<div style="padding: 10px;">
     			<!-- Card View Section-->
     			<% tasks.each do |task|%>			
-  				<div class="mdl-card mdl-shadow--2dp demo-card-square">
+  				<div class="mdl-card mdl-shadow--2dp grid-card">
   					<div class="mdl-card__title">
 						<h4 class="mdl-card__title-text"><%=task.title%></h4>
 					</div>
