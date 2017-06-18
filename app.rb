@@ -46,7 +46,7 @@ post '/add' do
       todo.color = "orange"
     end
   else
-    if important
+    if todo.important
       todo.color = "green"
     else
       todo.color = "lightgreen"
